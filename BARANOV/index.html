@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Депутат Роман Баранов | Официальный сайт</title>
+		<link rel="stylesheet" href="./css/index.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="tricolor"></div>
+
+		<header>
+			<div class="nav-container">
+				<div class="logo">Баранов <span>Роман</span></div>
+				<nav>
+					<a href="#about">О депутате</a>
+					<a href="#news">Новости</a>
+					<a href="#quiz">Викторина</a>
+					<a href="#reviews">Отзывы</a>
+					<a href="#contact">Обращение</a>
+				</nav>
+			</div>
+		</header>
+
+		<section class="hero" id="about">
+			<div class="hero-container">
+				<div class="hero-text">
+					<h1>Роман Михайлович Баранов</h1>
+					<p>
+						Депутат. Работаю для людей, открыт к диалогу и всегда на связи с
+						избирателями. Вместе мы сделаем наш город лучше!
+					</p>
+					<a href="#contact" class="btn">Написать обращение</a>
+				</div>
+				<div class="hero-image">
+					<img
+						src="./images/costume.jpg"
+						alt="Роман Баранов"
+						onerror="this.src = 'https:costume'"
+					/>
+				</div>
+			</div>
+		</section>
+		<section id="news">
+			<div class="container">
+				<h2 class="section-title">Новости и деятельность</h2>
+				<div class="news-grid">
+					<div class="news-card">
+						<img
+							src="./images/conference.jpg"
+							alt="Пресс-конференция"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/400x220/ccc/333?text=Фото'
+							"
+						/>
+						<div class="news-content">
+							<span class="news-date">25 октября 2026</span>
+							<h3>Встреча в штабе партии</h3>
+							<p>
+								Обсудили актуальные вопросы развития региона на площадке «Единой
+								России». Намечены конкретные шаги по улучшению инфраструктуры.
+							</p>
+						</div>
+					</div>
+
+					<div class="news-card">
+						<img
+							src="./images/military.jpg"
+							alt="Помощь бойцам"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/400x220/ccc/333?text=Фото'
+							"
+						/>
+						<div class="news-content">
+							<span class="news-date">15 октября 2026</span>
+							<h3>Поддержка наших бойцов</h3>
+							<p>
+								Лично посетил передовые позиции. Передал гуманитарную помощь и
+								технику нашим защитникам. Победа будет за нами!
+							</p>
+						</div>
+					</div>
+
+					<div class="news-card">
+						<img
+							src="./images/colleague.jpg"
+							alt="Рабочая встреча"
+							onerror="
+								this.src =
+									'https://via.placeholder.com/400x220/ccc/333?text=Фото'
+							"
+						/>
+						<div class="news-content">
+							<span class="news-date">10 октября 2026</span>
+							<h3>Совместная работа с коллегами</h3>
+							<p>
+								Провели продуктивную встречу по вопросам социальной политики.
+								Обменялись опытом и наметили планы по поддержке семей.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Викторина -->
+		<section id="quiz" class="quiz-section">
+			<div class="container">
+				<h2 class="section-title">Проверь свои знания</h2>
+				<div class="quiz-box">
+					<div class="quiz-question">
+						Какой документ является основным законом нашей страны?
+					</div>
+					<div class="quiz-options">
+						<div class="quiz-option" onclick="checkAnswer(this, false)">
+							Уголовный кодекс
+						</div>
+						<div class="quiz-option" onclick="checkAnswer(this, true)">
+							Конституция РФ
+						</div>
+						<div class="quiz-option" onclick="checkAnswer(this, false)">
+							Гражданский кодекс
+						</div>
+					</div>
+					<div class="quiz-result" id="quizResult"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="reviews">
+			<div class="container">
+				<h2 class="section-title">Отзывы жителей</h2>
+				<div class="reviews-grid">
+					<div class="review-card">
+						<div class="review-text">
+							«Хочу выразить огромную благодарность Роману Михайловичу за помощь
+							в решении вопроса с детской площадкой во дворе. Откликнулся
+							быстро, вопрос решили!»
+						</div>
+						<div class="review-author">
+							<div class="review-avatar">Е</div>
+							<span>Елена, г. Краснодар</span>
+						</div>
+					</div>
+
+					<div class="review-card">
+						<div class="review-text">
+							«Всегда на связи. Помог разобраться с оформлением льгот для
+							ветерана труда. Побольше бы таких неравнодушных депутатов!»
+						</div>
+						<div class="review-author">
+							<div class="review-avatar">А</div>
+							<span>Александр Петрович</span>
+						</div>
+					</div>
+
+					<div class="review-card">
+						<div class="review-text">
+							«Очень отзывчивый и честный человек. Провел личный прием граждан,
+							выслушал каждого. Спасибо за вашу работу!»
+						</div>
+						<div class="review-author">
+							<div class="review-avatar">М</div>
+							<span>Марина, общественный деятель</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact-section">
+			<div class="container">
+				<h2 class="section-title">Оставить обращение</h2>
+				<div class="form-box">
+					<form id="feedbackForm" onsubmit="submitForm(event)">
+						<div class="form-group">
+							<label for="name">Ваше имя</label>
+							<input
+								type="text"
+								id="name"
+								required
+								placeholder="Иван Иванович"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="phone">Телефон или Email</label>
+							<input
+								type="text"
+								id="phone"
+								required
+								placeholder="Для обратной связи"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="message">Текст обращения</label>
+							<textarea
+								id="message"
+								required
+								placeholder="Опишите вашу проблему или предложение..."
+							></textarea>
+						</div>
+						<button type="submit" class="btn">Отправить депутату</button>
+						<div class="success-msg" id="successMsg">
+							✅ Ваше обращение успешно отправлено! Депутат свяжется с вами в
+							ближайшее время.
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="social-links">
+				<a href="https://vk.com" target="_blank">ВКонтакте</a>
+				<a href="https://t.me" target="_blank">Telegram</a>
+				<a href="https://ok.ru" target="_blank">Одноклассники</a>
+			</div>
+			<p>
+				© 2026 Депутат Баранов Роман Михайлович. Сайт создан для взаимодействия
+				с избирателями.
+			</p>
+			<p style="font-size: 12px; margin-top: 10px; color: #64748b">
+				Все обращения граждан рассматриваются в соответствии с действующим
+				законодательством.
+			</p>
+		</footer>
+
+		<script>
+			function checkAnswer(element, isCorrect) {
+				const options = document.querySelectorAll(".quiz-option");
+				const result = document.getElementById("quizResult");
+
+				options.forEach((opt) => {
+					opt.style.background = "";
+					opt.style.borderColor = "#ddd";
+					opt.style.color = "";
+				});
+
+				if (isCorrect) {
+					element.style.background = "#e8f5e9";
+					element.style.borderColor = "#4caf50";
+					element.style.color = "#2e7d32";
+					result.innerHTML =
+						"✅ Правильно! Конституция РФ — основной закон нашего государства.";
+					result.style.color = "#2e7d32";
+				} else {
+					element.style.background = "#ffebee";
+					element.style.borderColor = "#f44336";
+					element.style.color = "#c62828";
+					result.innerHTML = "❌ Не совсем. Правильный ответ: Конституция РФ.";
+					result.style.color = "#c62828";
+				}
+			}
+
+			function submitForm(event) {
+				event.preventDefault();
+
+				const btn = document.querySelector("#feedbackForm .btn");
+				const successMsg = document.getElementById("successMsg");
+
+				btn.style.display = "none";
+				successMsg.style.display = "block";
+
+				document.getElementById("feedbackForm").reset();
+
+				setTimeout(() => {
+					btn.style.display = "block";
+					successMsg.style.display = "none";
+				}, 5000);
+			}
+		</script>
+	</body>
+</html>
